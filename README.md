@@ -1,4 +1,5 @@
 # M3Compulsory-Task-6
+Comment from coding mentor: 
 It looks like you've included names, like "Partner, Mr. Austen", in the dataset, which is causing a problem during model training. The error message could not convert string to float occurs because the DecisionTreeClassifier requires numerical data, but it encountered text data that it couldn’t process.
 
 To resolve this, make sure all columns in your training data (X_train) are converted to numeric format. Here’s what to check and do:
